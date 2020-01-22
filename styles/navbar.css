@@ -2,7 +2,7 @@
 .navbar {
     overflow: hidden; /* Don't allow scrolling */
     display: block; /* Occupies its own horizontal space */
-    background-color: #13294E;
+    background-color: rgb(78, 19, 19);
     position: fixed; /* Doesn't move */
     top: 0;
     width: 100%; /* 100% of width of screen */
@@ -29,7 +29,7 @@
     z-index: 150; /* Force the menu to be at front */
     top: 48px; /* Position menu 48 px from top of screen; accomodates top navbar */
     left: 0; /* Position the menu on the left hand side */
-    background-color: #13294E; /* Background color is dark blue */
+    background-color: rgb(78, 19, 19); /* Background color is dark blue */
     overflow-x: hidden; /* Don't allow horizontal scroll */
     transition: 0.5s; /* Animation transition time is 0.5 sec */
     padding-top: 60px; /* Place menu content 60 px from top */
@@ -127,7 +127,7 @@
 .btncolorthemeoutline {
         border: 2px;
         border-color: #13294E !important;
-        color: #13294E !important;
+        color: rgb(78, 19, 19) !important;
 }
 
 /* Styling for the divs in the app. Ensures that the content at top isn't obscured by top bar */
@@ -149,7 +149,8 @@
     
 /* Styling for a navbar at the bottom of the page */
 .bottombar {
-    background-color: #13294E;
+
+    background-color: rgb(78, 19, 19);
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -160,7 +161,7 @@
 .bottombar a {
     display: block;
     float: left;
-    width: 32%;
+    width: 33%;
     color: white;
     text-align: center;
     padding: 2px 2px;
@@ -220,4 +221,13 @@
 
 body {
     margin: 0;
+    background-color: tan;
+}
+
+.padded{
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 0px;
 }

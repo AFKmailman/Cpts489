@@ -9,6 +9,8 @@ var menuOption = null;
 var currentPage = document.getElementById("homeDiv");
 var currentSubPage = null;
 var subMenuOption = null;
+
+
 document.getElementById("menuBtn").addEventListener("click", toggleSideMenu);
 //Associative array maps modes to page titles
 // var modeToTitle = {"feedMode": "Activity Feed",
@@ -46,7 +48,12 @@ for (i = 0; i < bottomItems.length; i++) {
     bottomItems[i].addEventListener("click", bottomMenuHandler);
 }
 
+
 //Hide bottom bar
 document.getElementById("bottomBar").style.display = "none";
+
+
+
+
 
 //document.getElementById("menuBtn").disabled = true;

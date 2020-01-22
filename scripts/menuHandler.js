@@ -1,4 +1,4 @@
-function toggleSideMenu(){
+function toggleSideMenu() {
     let t = document.getElementById("sideMenu");
     //console.log("menuOpen: " + menuOpen);
     if(menuOpen) {
@@ -11,7 +11,7 @@ function toggleSideMenu(){
     }
 }
 
-function sideMenuHandler(){
+function sideMenuHandler() {
     //console.log("sideMenuHandler");
     //console.log(this);
     if(menuOption != null) menuOption.classList.remove("menuItemSelected");
@@ -37,8 +37,7 @@ function sideMenuHandler(){
     subMenuOption.classList.add('disabled');
 }
 
-function bottomMenuHandler(){
-    
+function bottomMenuHandler() {
     subMenuOption.classList.remove('disabled');
     currentSubPage.style.display = "none";
     currentSubPage = document.getElementById(this.id+'Div');
