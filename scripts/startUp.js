@@ -48,10 +48,13 @@ for (i = 0; i < bottomItems.length; i++) {
     bottomItems[i].addEventListener("click", bottomMenuHandler);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    //document.getElementById("test1").addEventListener("click", openModal);
+    //console.log(document.getElementsByClassName('modal-close'));
+});
 
 //Hide bottom bar
 document.getElementById("bottomBar").style.display = "none";
-
 
 
 

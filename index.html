@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
     </div>
     <!-- end of fixed bottom bar-->
 
-    <!--other pages-->
+    <!--other pages
     <div id="homeDiv" class="padded">
         <h1 style="align-content: center;">Home Page</h1>
         <div w3-include-html="html/startPage.html"> </div>
@@ -81,11 +81,36 @@
     <div id="hobbiesDiv" class="padded hideOnStartUp">
         <h1 style="align-content: center;">Hobbies Page</h1>
         <div w3-include-html="html/hobbies.html"> </div>
+    </div> -->
+    <div id="aboutModoalDiv" class="padded hideOnStartUp">
+        <div w3-include-html="html/aboutModal.html"> </div>
     </div>
 
+    <div id="loginPageDiv" class="padded">
+        <h1 style="align-content: center;">Login Page</h1>
+        <div w3-include-html="html/loginPage.html"> </div>
+    </div>
+
+    <div id="dataTableDiv" class="padded hideOnStartUp">
+        <div w3-include-html="html/dataTable.html"> </div>
+    </div>
+
+    <div id="addRecordDiv" class="padded hideOnStartUp">
+        <div w3-include-html="html/addRecord.html"> </div>
+    </div>
+
+    <div id="underConstructionDiv" class="padded hideOnStartUp">
+        <div w3-include-html="html/underConstruction.html"> </div>
+    </div>
+
+    <!--<button id="test1">test1</button>-->
+    
+
     <!--scripts below-->
+    <script src="scripts/aboutPopUp.js"></script>
     <script src="scripts/includeHtml.js"></script>
     <script src="scripts/eventHandler.js"></script>
+    <script src="scripts/loginHandler.js"></script>
     <script src="scripts/startUp.js"></script>
 
 </body>
