@@ -54,3 +54,15 @@ function validateLogin() {
         }
     }, 1);
 }
+
+function logout() {
+    curUser = null;
+    loggedIn = false;
+    document.getElementById('bottomBar').style.display = 'none';
+    document.getElementById('menuBtn').diabled = true;
+    var hideOnStartUp = document.getElementsByClassName("hideOnStartUp");
+    for (i = 0; i < hideOnStartUp.length; i++) {
+        hideOnStartUp[i]['style']['display'] = "none";
+    }
+    document.getElementById('loginPageDiv').style.display = 'block';
+}

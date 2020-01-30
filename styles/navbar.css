@@ -161,12 +161,13 @@
 .bottombar a {
     display: block;
     float: left;
-    width: 33%;
+    width: 50%;
     color: white;
     text-align: center;
     padding: 2px 2px;
     text-decoration: none;
     font-size: 17px;
+    border: 1px solid black;
 }
 
 
