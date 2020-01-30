@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Hide bottom bar
 document.getElementById("bottomBar").style.display = "none";
-
+document.getElementById('menuBtn').disabled = true;
 
 
 

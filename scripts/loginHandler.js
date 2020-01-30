@@ -36,6 +36,9 @@ function validateLogin() {
             curUser = email.value;
             email.value = "";
             password.value = "";
+            document.getElementById('bottomBar').style.display = 'block';
+            document.getElementById('menuBtn').disabled = false;
+            document.getElementById('dataTableDiv').style.display = 'block';
         }
         else if (validEmail && !validPassword) {
             //incorrect password
