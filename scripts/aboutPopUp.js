@@ -1,9 +1,10 @@
 function openModal() {
-    document.getElementById("aboutModal").style.display = 'block';
+    console.log('in openModal');
+    document.getElementById("aboutModalDiv").style.display = 'block';
     document.getElementsByClassName("modal-close")[0].onclick = closeModal;
 }
 
 function closeModal() {
-    document.getElementById('aboutModal').style.display = 'none';
+    document.getElementById('aboutModalDiv').style.display = 'none';
 }
 

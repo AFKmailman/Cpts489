@@ -46,3 +46,31 @@ function bottomMenuHandler() {
     subMenuOption.classList.add('disabled');
     console.log(this);
 }
+
+function displayRecord(){
+    document.getElementById('dataTableDiv').style.display = 'none';
+    document.getElementById('addRecordDiv').style.display = 'block';
+    document.getElementById('bottomBar').style.display = 'none';
+    document.getElementById('menuBtn').disabled = true;
+    document.getElementById('sideMenu').style.width = '0px';
+}
+
+function goBack() {
+    document.getElementById('dataTableDiv').style.display = 'block';
+    document.getElementById('addRecordDiv').style.display = 'none';
+    document.getElementById('bottomBar').style.display = 'block';
+    document.getElementById('menuBtn').disabled = false;
+}
+
+function underConstruction() {
+    alert("page is currently under construction");
+}
+
+function mode1() {
+    document.getElementById('mode').setAttribute( "onClick", "javascript: displayRecord();" );
+    document.getElementById('mode').innerHTML = "<span class='fas fa-angle-right'>&nbsp;Add Data&nbsp;</span>";
+}
+function mode2() {
+    document.getElementById('mode').setAttribute( "onClick", "javascript: underConstruction();" );
+    document.getElementById('mode').innerHTML = "<span class='fas fa-angle-right'>&nbsp;Under Construction&nbsp;</span>";
+}

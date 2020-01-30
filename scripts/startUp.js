@@ -40,12 +40,12 @@ for (i = 0; i < hideOnStartUp.length; i++) {
 
 var menuItems = document.getElementsByClassName("menuItem");
 for (i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener("click", sideMenuHandler);
+    //menuItems[i].addEventListener("click", sideMenuHandler);
 }
 
 var bottomItems = document.getElementsByClassName("bottomBarBtn");
 for (i = 0; i < bottomItems.length; i++) {
-    bottomItems[i].addEventListener("click", bottomMenuHandler);
+    //bottomItems[i].addEventListener("click", bottomMenuHandler);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

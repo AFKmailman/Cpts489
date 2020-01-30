@@ -1,5 +1,5 @@
 .modal {
-    display: none; /*block for testing. final product should be none*/
+    display: block; /*block for testing. final product should be none*/
     position: fixed;
     z-index: 200;
     left: 0;
