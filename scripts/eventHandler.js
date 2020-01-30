@@ -74,3 +74,24 @@ function mode2() {
     document.getElementById('mode').setAttribute( "onClick", "javascript: underConstruction();" );
     document.getElementById('mode').innerHTML = "<span class='fas fa-angle-right'>&nbsp;Under Construction&nbsp;</span>";
 }
+
+function saveAddRecordData() {
+    let data = {
+        "title":"" + document.getElementById('titleInput').value,
+        "productionCompany":"" + document.getElementById('productionCompanyInput').value,
+        "length":"" + document.getElementById('lengthInput').value,
+        "genre":"" + document.getElementById('genreInput').value,
+        "budget":"" + document.getElementById('budgetInput').value,
+        "releaseDate":"" + document.getElementById('releaseDateInput').value
+    }
+    console.log(data);
+    localStorage.setItem(curUser, JSON.stringify(data));
+    alert("Data Saved")
+    document.getElementById('titleInput').value = "";
+    document.getElementById('productionCompanyInput').value = "";
+    document.getElementById('lengthInput').value = "";
+    document.getElementById('genreInput').value = "";
+    document.getElementById('budgetInput').value = "";
+    document.getElementById('releaseDateInput').value = "";
+    goBack();
+}
